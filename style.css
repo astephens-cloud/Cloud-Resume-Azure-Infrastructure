@@ -95,23 +95,40 @@ button:hover {
 
 /* Print layout */
 @media print {
-  button {
-    display: none;
-  }
+  button { display: none; }
+
   body {
+    display: block;
     height: auto;
     min-height: unset;
     background: white;
-    display: block;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 11pt;
+    line-height: 1.4;
   }
-  .resume {
-    box-shadow: none;
-    padding-bottom: 0;
-    margin-bottom: 0;
-}
 
+  .resume {
+    max-width: 100%;
+    width: 100%;
+    padding: 0.5in 0.75in;
+    margin: 0;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  h1      { font-size: 20pt; margin-bottom: 4pt; }
+  h2      { font-size: 13pt; margin-bottom: 6pt; }
+  p, li   { font-size: 10pt; color: #333; }
+  strong  { font-size: inherit; }
+
+  section:last-child,
+  p:last-child,
+  li:last-child { margin-bottom: 0; }
+
+  li, p { page-break-inside: avoid; }
+}
 /* Hide text behind a dark bar */
 .spoiler {
   display: inline;
