@@ -118,8 +118,8 @@ button:hover {
     border-radius: 0;
   }
 
-  h1      { font-size: 20pt; margin-bottom: 4pt; }
-  h2      { font-size: 13pt; margin-bottom: 6pt; }
+  h1      { font-size: 12pt; margin-bottom: 4pt; }
+  h2      { font-size: 11pt; margin-bottom: 6pt; }
   p, li   { font-size: 10pt; color: #333; }
   strong  { font-size: inherit; }
 
